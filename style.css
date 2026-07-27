@@ -1,3 +1,7 @@
+/* =====================
+   全体設定
+===================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,252 +9,405 @@
 }
 
 body {
-    font-family: sans-serif;
-    background: #f5f5f5;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 20px 60px;
-
-    background: white;
-}
-
-nav {
-    display: flex;
-    gap: 30px;
-}
-
-nav a {
-    text-decoration: none;
+    font-family: "Noto Sans JP", sans-serif;
+    background: #f5f7fa;
     color: #333;
-    font-weight: bold;
-}
-
-.hero {
-    min-height: 80vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-
-    color: white;
-}
-
-.hero h2 {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 22px;
-    margin-bottom: 40px;
-}
-
-.button {
-    background: white;
-    color: #0099cc;
-
-    padding: 15px 35px;
-
-    border-radius: 50px;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.button:hover {
-    transform: scale(1.05);
-}
-
-
-@media (max-width: 768px) {
-
-    header {
-        padding: 20px;
-    }
-
-    nav {
-        gap: 15px;
-    }
-
-    .hero h2 {
-        font-size: 40px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-}
-.works {
-    padding: 80px 20px;
-    text-align: center;
-    background: white;
-}
-
-.works h2 {
-    font-size: 40px;
-    margin-bottom: 40px;
-}
-
-.work-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.card {
-    width: 300px;
-    padding: 30px;
-    background: #f5f5f5;
-    border-radius: 15px;
-}
-
-.card h3 {
-    margin-bottom: 15px;
-}
-
-
-@media (max-width: 768px) {
-
-    .work-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-.works {
-    padding: 80px 20px;
-    text-align: center;
-    background: white;
-}
-
-.works h2 {
-    font-size: 40px;
-    margin-bottom: 40px;
-}
-
-.work-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.card {
-    width: 300px;
-    padding: 30px;
-    background: #f5f5f5;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.card h3 {
-    margin-bottom: 15px;
-}
-/* About */
-
-.about {
-    padding: 80px 20px;
-    text-align: center;
-    background: white;
-}
-
-.about h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
-}
-
-.about p {
-    font-size: 18px;
     line-height: 1.8;
 }
 
 
+/* =====================
+   Header
+===================== */
 
-/* Works */
+header {
 
-.works {
-    padding: 80px 20px;
+    background: linear-gradient(135deg, #2563eb, #0f766e);
+
+    color: white;
+
     text-align: center;
-    background: #f5f5f5;
+
+    padding: 80px 20px;
+
 }
 
-.works h2 {
-    font-size: 40px;
-    margin-bottom: 40px;
+
+header h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 2px;
+
 }
 
-.work-list {
+
+header p {
+
+    font-size: 20px;
+
+    margin-bottom: 30px;
+
+    color: rgba(255,255,255,0.9);
+
+}
+
+
+/* ナビゲーション */
+
+nav ul {
+
+    list-style: none;
+
     display: flex;
+
     justify-content: center;
+
     gap: 30px;
+
+    margin-top: 30px;
+
 }
 
-.card {
-    width: 300px;
-    padding: 30px;
 
-    background: white;
+nav a {
 
-    border-radius: 15px;
+    color: white;
 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+
+    font-weight: bold;
 
     transition: 0.3s;
+
 }
+
+
+nav a:hover {
+
+    opacity: 0.7;
+
+}
+
+
+
+/* =====================
+   ボタン
+===================== */
+
+
+.btn {
+
+    display: inline-block;
+
+    background: white;
+
+    color: #2563eb;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* =====================
+   Hero
+===================== */
+
+
+.hero {
+
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: white;
+
+}
+
+
+
+.hero h2 {
+
+    font-size: 50px;
+
+    color: #1e3a8a;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.hero p {
+
+    font-size: 20px;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+
+/* =====================
+   About
+===================== */
+
+
+.about {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+}
+
+
+
+.about h2 {
+
+    font-size: 36px;
+
+    margin-bottom: 30px;
+
+    color:#333;
+
+}
+
+
+
+.about p {
+
+    color:#555;
+
+    line-height:2;
+
+}
+
+
+
+/* =====================
+   Works
+===================== */
+
+
+.works {
+
+    padding:80px 20px;
+
+    text-align:center;
+
+    background:#f5f7fa;
+
+}
+
+
+
+.works h2 {
+
+    font-size:36px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.work-list {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+
+/* カード */
+
+.card {
+
+    width:300px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+
 
 .card:hover {
-    transform: translateY(-10px);
+
+    transform:translateY(-8px);
+
 }
+
+
+
+.card img {
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    margin-bottom:15px;
+
+}
+
+
 
 .card h3 {
-    margin-bottom: 15px;
+
+    margin-bottom:15px;
+
 }
 
 
 
-/* Contact */
+.card p {
+
+    color:#555;
+
+}
+
+
+
+/* =====================
+   Contact
+===================== */
+
 
 .contact {
-    padding: 80px 20px;
-    text-align: center;
-    background: white;
+
+    padding:80px 20px;
+
+    text-align:center;
+
+    background:white;
+
 }
+
+
 
 .contact h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
 }
+
+
 
 .contact p {
-    margin-bottom: 30px;
+
+    margin-bottom:30px;
+
 }
 
 
 
-/* スマホ対応 */
 
-@media (max-width: 768px) {
+/* =====================
+   スマホ対応
+===================== */
+
+
+@media(max-width:768px){
+
+
+    header h1 {
+
+        font-size:36px;
+
+    }
+
+
+    nav ul {
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size:36px;
+
+    }
+
+
+    .hero p {
+
+        font-size:18px;
+
+    }
+
 
     .work-list {
-        flex-direction: column;
-        align-items: center;
+
+        flex-direction:column;
+
+        align-items:center;
+
     }
 
+
     .card {
-        width: 90%;
+
+        width:90%;
+
     }
+
 
 }
