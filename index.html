@@ -2,314 +2,208 @@
 <html lang="ja">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Web Design Portfolio</title>
+    <title>Simple Web Studio | Web制作</title>
 
     <link rel="stylesheet" href="style.css">
-
     <link rel="icon" href="favicon.png" type="image/png">
-
 </head>
-
 
 <body>
 
-
 <header>
 
-    <h1>
-        Web Design Portfolio
-    </h1>
+    <h1>Simple Web Studio</h1>
 
+    <div class="menu-toggle">☰</div>
 
     <nav>
-
         <ul>
-
             <li><a href="#about">About</a></li>
-
+            <li><a href="service.html">Service</a></li>
+            <li><a href="price.html">Price</a></li>
             <li><a href="#works">Works</a></li>
-
             <li><a href="#contact">Contact</a></li>
-
         </ul>
-
     </nav>
-
 
     <p>
         見やすく、使いやすいホームページを制作します。
     </p>
 
-
     <a href="#works" class="btn">
         制作実績を見る
     </a>
 
-
 </header>
-
-
-
-
 
 <main>
 
-
-
-
-
 <section class="hero">
-
 
     <h2>
         丁寧なWebサイト制作を行います。
     </h2>
-
 
     <p>
         HTML・CSSを使い、
         スマートフォンにも対応したWebサイトを制作します。
     </p>
 
-
     <a href="#contact" class="btn">
         制作を相談する
     </a>
 
+</section>
+
+<section id="about" class="about fade">
+
+    <h2>About</h2>
+
+    <p>
+        HTML・CSSを使ったホームページ制作を行っています。
+    </p>
+
+    <p>
+        店舗サイトや企業サイトなど、
+        目的に合わせた見やすく使いやすいWebサイトを制作します。
+    </p>
+
+    <h3>Skills</h3>
+
+    <div class="skill-list">
+
+        <div class="skill-card">
+            HTML / CSS
+            <p>Webサイト制作の基本技術</p>
+        </div>
+
+        <div class="skill-card">
+            レスポンシブ対応
+            <p>スマホ表示に対応</p>
+        </div>
+
+        <div class="skill-card">
+            GitHub Pages
+            <p>Webサイト公開</p>
+        </div>
+
+    </div>
 
 </section>
 
+<section id="works" class="fade">
 
+    <h2>Works</h2>
 
+    <div class="works-container">
+                <div class="card">
+            <img src="images/cafe.jpg" alt="カフェサイト">
 
+            <h3>カフェサイト</h3>
 
+            <p>
+                シンプルで見やすい店舗サイトを制作しました。
+            </p>
 
-<section id="about" class="about">
+            <p><strong>使用技術：</strong>HTML / CSS</p>
 
+            <p><strong>制作期間：</strong>約1週間</p>
 
-    <h2>
-        About
-    </h2>
+            <a href="#" class="button">サイトを見る</a>
+        </div>
 
+        <div class="card">
+            <img src="images/company.jpg" alt="企業サイト">
+
+            <h3>企業サイト</h3>
+
+            <p>
+                信頼感を伝えることを意識した企業向けサイトです。
+            </p>
+
+            <p><strong>使用技術：</strong>HTML / CSS</p>
+
+            <p><strong>制作期間：</strong>約1週間</p>
+
+            <a href="#" class="button">サイトを見る</a>
+        </div>
+
+        <div class="card">
+            <img src="images/salon.jpg" alt="美容室サイト">
+
+            <h3>美容室サイト</h3>
+
+            <p>
+                メニューや営業時間を分かりやすく整理したサイトです。
+            </p>
+
+            <p><strong>使用技術：</strong>HTML / CSS</p>
+
+            <p><strong>制作期間：</strong>約1週間</p>
+
+            <a href="#" class="button">サイトを見る</a>
+        </div>
+
+        <div class="card">
+            <img src="images/company.jpg" alt="コーポレートサイト">
+
+            <h3>コーポレートサイト</h3>
+
+            <p>
+                シンプルで信頼感のあるデザインを意識して制作しました。
+            </p>
+
+            <p><strong>使用技術：</strong>HTML / CSS</p>
+
+            <p><strong>制作期間：</strong>約1週間</p>
+
+            <a href="#" class="button">サイトを見る</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact fade">
+
+    <h2>Contact</h2>
 
     <p>
-        HTML・CSSを中心としたWeb制作を行っています。
+        Webサイト制作のご相談・お問い合わせは<br>
+        お気軽にご連絡ください。
     </p>
 
 
-    <p>
-        見やすさ・使いやすさを大切にし、
-        お客様の目的に合わせたホームページ制作を心がけています。
-    </p>
+   <form action="https://formspree.io/f/xgogdvdo" method="POST">
 
+        <label>
+            お名前
+        </label>
 
-    <p>
-        店舗サイト、企業サイトなど、
-        シンプルで伝わりやすいWebサイトを制作します。
-    </p>
+        <input type="text" name="name" placeholder="名前">
+
+<input type="email" name="email" placeholder="メールアドレス">
+
+<textarea name="message" placeholder="お問い合わせ内容"></textarea>
+
+<button type="submit">送信</button>
+    </form>
 
 
 </section>
-
-
-
-
-
-
-
-<section id="works" class="works">
-
-
-<h2>
-    Works
-</h2>
-
-
-
-<div class="work-list">
-
-
-
-
-
-<div class="card">
-
-
-<img src="images/cafe.jpg" alt="カフェサイト">
-
-
-<h3>
-    カフェサイト
-</h3>
-
-
-<p>
-    店舗の雰囲気が伝わるデザインを意識し、
-    スマホでも見やすいサイトを制作しました。
-</p>
-
-
-<p>
-    <strong>使用技術：</strong>
-    HTML / CSS
-</p>
-
-
-<p>
-    <strong>制作期間：</strong>
-    約1週間
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="images/salon.jpg" alt="美容室サイト">
-
-
-<h3>
-    美容室サイト
-</h3>
-
-
-<p>
-    メニューや営業時間などの情報を整理し、
-    利用者が見やすいサイトを制作しました。
-</p>
-
-
-<p>
-    <strong>使用技術：</strong>
-    HTML / CSS
-</p>
-
-
-<p>
-    <strong>制作期間：</strong>
-    約1週間
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="card">
-
-
-<img src="images/company.jpg" alt="企業サイト">
-
-
-<h3>
-    企業サイト
-</h3>
-
-
-<p>
-    信頼感を伝えることを意識した、
-    シンプルな企業向けサイトを制作しました。
-</p>
-
-
-<p>
-    <strong>使用技術：</strong>
-    HTML / CSS
-</p>
-
-
-<p>
-    <strong>制作期間：</strong>
-    約1週間
-</p>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section id="contact" class="contact">
-
-
-<h2>
-    Contact
-</h2>
-
-
-<p>
-    Webサイト制作のご相談・お問い合わせは<br>
-    お気軽にご連絡ください。
-</p>
-
-
-
-<a href="mailto:あなたのメールアドレス" class="btn">
-    お問い合わせする
-</a>
-
-
-</section>
-
-
-
-
-
 
 </main>
 
-
-
-
-
-
-
 <footer>
 
-
-<p>
-    © 2026 Web Design Portfolio
-</p>
-
+    <p>© 2026 Simple Web Studio</p>
 
 </footer>
 
-
-
-
-
+<script src="script.js"></script>
 
 </body>
-
-
 </html>
