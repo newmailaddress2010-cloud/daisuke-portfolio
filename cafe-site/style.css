@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+section:not(.hero) {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+
+/* 制作実績 */
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+
+/* ボタン */
+
+a {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+
+/* お問い合わせ */
+
+.contact {
+    text-align: center;
+}
+
+
+/* スマホ対応 */
+
+@media(max-width:600px){
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+}
+.hero {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+}
+.menu-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    margin: 20px 0 10px;
+}
+
+.menu-card p {
+    padding: 0 20px;
+    color: #666;
+}
+
+.menu-card span {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #8b5a2b;
+}
+
+
+#contact {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    background: #6b8e5a;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+
+.contact-button:hover {
+    opacity: 0.8;
+}
+.access-box {
+    background: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.access-box p {
+    margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+
+    .hero img {
+        height: 400px;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+
+    .menu-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .menu-card {
+        width: 90%;
+    }
+
+
+    header {
+        padding: 30px 15px;
+    }
+
+
+    header h1 {
+        font-size: 28px;
+    }
+
+
+    nav a {
+        margin: 5px;
+        padding: 10px 15px;
+    }
+
+}
