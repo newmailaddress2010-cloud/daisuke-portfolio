@@ -2,90 +2,331 @@
 <html lang="ja">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>株式会社〇〇</title>
+<title>ABC株式会社 | コーポレートサイト</title>
+
+<meta name="description" content="ABC株式会社の企業サイトです。Web制作・システム開発・保守運用を行っています。">
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<h1>株式会社〇〇</h1>
+<div class="container">
+
+<h1>ABC株式会社</h1>
 
 <nav>
-<a href="#about">会社概要</a>
-<a href="#service">事業内容</a>
-<a href="#contact">お問い合わせ</a>
+
+<ul>
+
+<li><a href="#about">会社概要</a></li>
+<li><a href="#service">事業内容</a></li>
+<li><a href="#works">制作実績</a></li>
+<li><a href="#company">会社情報</a></li>
+<li><a href="#contact">お問い合わせ</a></li>
+
+</ul>
+
 </nav>
+
+</div>
 
 </header>
 
 
+
 <section class="hero">
 
+<div class="hero-text">
+
 <h2>
-信頼されるサービスを提供します
+未来を支える<br>
+確かな技術
 </h2>
 
 <p>
-お客様の課題解決をサポートする企業サイト
+お客様の課題を解決するWebサービスを提供します。
 </p>
+
+<a href="#contact" class="button">
+お問い合わせ
+</a>
+
+</div>
 
 </section>
 
 
-<section id="about">
+
+
+<section id="about" class="fade">
+
+<div class="container">
 
 <h2>会社概要</h2>
 
 <p>
-株式会社〇〇は、
-お客様に寄り添ったサービスを提供する会社です。
+ABC株式会社は、企業向けWeb制作やシステム開発を行う会社です。
 </p>
+
+<p>
+使いやすく、信頼されるサービスを提供し、
+お客様のビジネスをサポートします。
+</p>
+
+</div>
 
 </section>
 
 
-<section id="service">
+
+
+<section id="service" class="fade">
+
+<div class="container">
 
 <h2>事業内容</h2>
 
-<ul>
 
-<li>Web制作</li>
+<div class="cards">
 
-<li>ホームページ運用</li>
 
-<li>ITサポート</li>
+<div class="card">
+
+<h3>Web制作</h3>
+
+<p>
+企業サイト、店舗サイト、LPなど目的に合わせたWeb制作を行います。
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>システム開発</h3>
+
+<p>
+業務効率化を支援するシステム開発を行います。
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>保守・運用</h3>
+
+<p>
+公開後の更新や改善もサポートします。
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="works" class="fade">
+
+<div class="container">
+
+<h2>制作実績</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>企業サイト制作</h3>
+
+<p>
+会社の信頼感を高めるコーポレートサイトを制作しました。
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>採用サイト制作</h3>
+
+<p>
+企業の魅力を伝える採用向けサイトを制作しました。
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>LP制作</h3>
+
+<p>
+商品やサービスの魅力を伝えるページを制作しました。
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="news" class="fade">
+
+<div class="container">
+
+<h2>お知らせ</h2>
+
+
+<ul class="news">
+
+<li>2026.07 ホームページを公開しました。</li>
+
+<li>2026.07 新サービスを開始しました。</li>
 
 </ul>
 
+
+</div>
+
 </section>
 
 
-<section id="contact">
+
+
+
+<section id="company" class="fade">
+
+<div class="container">
+
+
+<h2>会社情報</h2>
+
+
+<table class="company-table">
+
+
+<tr>
+<th>会社名</th>
+<td>ABC株式会社</td>
+</tr>
+
+
+<tr>
+<th>所在地</th>
+<td>東京都〇〇区</td>
+</tr>
+
+
+<tr>
+<th>設立</th>
+<td>2026年</td>
+</tr>
+
+
+<tr>
+<th>代表者</th>
+<td>山田 太郎</td>
+</tr>
+
+
+<tr>
+<th>事業内容</th>
+<td>Web制作・システム開発・保守運用</td>
+</tr>
+
+
+</table>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="contact" class="fade">
+
+<div class="container">
+
 
 <h2>お問い合わせ</h2>
 
+
 <p>
-お問い合わせはこちらからお願いします。
+ご相談・お見積もりはお気軽にお問い合わせください。
 </p>
 
+
+<form>
+
+
+<input type="text" placeholder="お名前">
+
+
+<input type="email" placeholder="メールアドレス">
+
+
+<textarea placeholder="お問い合わせ内容"></textarea>
+
+
+<button class="button">
+送信する
+</button>
+
+
+</form>
+
+
+</div>
+
 </section>
+
+
+
 
 
 <footer>
 
 <p>
-© 株式会社〇〇
+© 2026 ABC Corporation
 </p>
 
+
 </footer>
+
+
+
+<script src="script.js"></script>
 
 
 </body>
