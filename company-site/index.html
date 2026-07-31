@@ -46,21 +46,25 @@
 
 <section class="hero">
 
+<div class="hero-overlay">
+
 <div class="hero-text">
 
 <h2>
-未来を支える<br>
-確かな技術
+企業の成長を支える<br>
+Webソリューション
 </h2>
 
 <p>
-お客様の課題を解決するWebサービスを提供します。
+ホームページ制作からシステム開発、運用サポートまで。
+<br>
+お客様のビジネスに合わせた最適なWebサービスを提供します。
 </p>
 
 <a href="#contact" class="button">
 お問い合わせ
 </a>
-
+</div>
 </div>
 
 </section>
@@ -155,10 +159,16 @@ ABC株式会社は、企業向けWeb制作やシステム開発を行う会社�
 
 <div class="card">
 
-<h3>企業サイト制作</h3>
+<h3>○○商事 コーポレートサイト</h3>
 
 <p>
-会社の信頼感を高めるコーポレートサイトを制作しました。
+企業の信頼感を高めるための
+コーポレートサイトを制作しました。
+</p>
+
+<p>
+<strong>制作内容：</strong>
+デザイン・HTML/CSS制作・スマホ対応
 </p>
 
 </div>
@@ -167,10 +177,16 @@ ABC株式会社は、企業向けWeb制作やシステム開発を行う会社�
 
 <div class="card">
 
-<h3>採用サイト制作</h3>
+<h3>Green Cafe 店舗サイト</h3>
 
 <p>
-企業の魅力を伝える採用向けサイトを制作しました。
+飲食店の魅力やメニュー情報を
+分かりやすく伝える店舗サイトを制作しました。
+</p>
+
+<p>
+<strong>制作内容：</strong>
+店舗紹介・メニュー掲載・レスポンシブ対応
 </p>
 
 </div>
@@ -179,10 +195,16 @@ ABC株式会社は、企業向けWeb制作やシステム開発を行う会社�
 
 <div class="card">
 
-<h3>LP制作</h3>
+<h3>Beauty Salon Lumière 予約サイト</h3>
 
 <p>
-商品やサービスの魅力を伝えるページを制作しました。
+美容室向けに予約までの導線を意識した
+Webサイトを制作しました。
+</p>
+
+<p>
+<strong>制作内容：</strong>
+店舗紹介・予約フォーム・スマホ対応
 </p>
 
 </div>
@@ -197,7 +219,6 @@ ABC株式会社は、企業向けWeb制作やシステム開発を行う会社�
 
 
 
-
 <section id="news" class="fade">
 
 <div class="container">
@@ -207,9 +228,12 @@ ABC株式会社は、企業向けWeb制作やシステム開発を行う会社�
 
 <ul class="news">
 
-<li>2026.07 ホームページを公開しました。</li>
+<li>2026.07.25　コーポレートサイト公開</li>
 
-<li>2026.07 新サービスを開始しました。</li>
+<li>2026.07.18　夏季休業のお知らせ</li>
+
+
+<li>2026.07.10　Web制作サービス開始</li>
 
 </ul>
 
@@ -241,13 +265,13 @@ ABC株式会社は、企業向けWeb制作やシステム開発を行う会社�
 
 <tr>
 <th>所在地</th>
-<td>東京都〇〇区</td>
+<td>東京都渋谷区</td>
 </tr>
 
 
 <tr>
 <th>設立</th>
-<td>2026年</td>
+<td>2021年4月</td>
 </tr>
 
 
@@ -258,8 +282,22 @@ ABC株式会社は、企業向けWeb制作やシステム開発を行う会社�
 
 
 <tr>
+<th>従業員数</th>
+<td>18名</td>
+</tr>
+
+
+<tr>
+<th>営業時間</th>
+<td>9:00〜18:00（土日祝休）</td>
+</tr>
+
+
+<tr>
 <th>事業内容</th>
-<td>Web制作・システム開発・保守運用</td>
+<td>
+Web制作・システム開発・保守運用
+</td>
 </tr>
 
 
@@ -287,25 +325,45 @@ ABC株式会社は、企業向けWeb制作やシステム開発を行う会社�
 </p>
 
 
-<form>
+<form action="https://formspree.io/f/xgogdvdo" method="POST">
 
 
-<input type="text" placeholder="お名前">
+<label>
+お名前
+</label>
+
+<input 
+type="text" 
+name="name" 
+placeholder="お名前">
 
 
-<input type="email" placeholder="メールアドレス">
+<label>
+メールアドレス
+</label>
+
+<input 
+type="email" 
+name="email" 
+placeholder="メールアドレス">
 
 
-<textarea placeholder="お問い合わせ内容"></textarea>
+<label>
+お問い合わせ内容
+</label>
+
+<textarea 
+name="message" 
+placeholder="お問い合わせ内容">
+</textarea>
 
 
-<button class="button">
+<button class="button" type="submit">
 送信する
 </button>
 
 
 </form>
-
 
 </div>
 
@@ -317,10 +375,28 @@ ABC株式会社は、企業向けWeb制作やシステム開発を行う会社�
 
 <footer>
 
+<div class="footer-container">
+
+<h3>ABC株式会社</h3>
+
+<p>
+Web制作・システム開発・保守運用
+</p>
+
+<nav>
+<ul>
+<li><a href="#about">会社概要</a></li>
+<li><a href="#service">事業内容</a></li>
+<li><a href="#works">制作実績</a></li>
+<li><a href="#contact">お問い合わせ</a></li>
+</ul>
+</nav>
+
 <p>
 © 2026 ABC Corporation
 </p>
 
+</div>
 
 </footer>
 

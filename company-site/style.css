@@ -474,3 +474,54 @@ section{
 
 
 }
+.hero {
+    min-height: 500px;
+    background-image: url("images/company-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-text {
+    color: white;
+    max-width: 600px;
+    padding: 40px;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+}
