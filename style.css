@@ -55,15 +55,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 22px 5%;
+
     background: linear-gradient(
         135deg,
         #667eea,
         #764ba2
     );
+
     color: #fff;
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
 }
 
@@ -80,12 +85,14 @@ header h1 {
 nav ul {
     display: flex;
     gap: 30px;
+
     list-style: none;
 }
 
 nav a {
     color: #fff;
     font-weight: 600;
+
     transition: 0.3s;
 }
 
@@ -111,9 +118,11 @@ nav a:hover {
 
 .hero {
     min-height: 650px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     text-align: center;
 
     background:
@@ -149,7 +158,9 @@ nav a:hover {
 
 .btn {
     display: inline-block;
+
     padding: 13px 30px;
+
     border-radius: 30px;
 
     background: #667eea;
@@ -169,27 +180,7 @@ nav a:hover {
 
 
 /* =========================
-   Introduction
-========================= */
-
-.intro {
-    padding: 100px 0;
-    text-align: center;
-    background: #fff;
-}
-
-.intro h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.intro p {
-    margin-bottom: 30px;
-}
-
-
-/* =========================
-   Common Section
+   Sections
 ========================= */
 
 .section {
@@ -198,16 +189,15 @@ nav a:hover {
 
 .section h2 {
     text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 50px;
-}
 
-.section h3 {
-    margin-bottom: 15px;
+    font-size: 2.2rem;
+
+    margin-bottom: 50px;
 }
 
 .section-description {
     text-align: center;
+
     margin-top: -30px;
     margin-bottom: 50px;
 }
@@ -217,12 +207,17 @@ nav a:hover {
    About
 ========================= */
 
-#about {
-    background: #f5f7fa;
+.about-section {
+    background: #fff;
+    text-align: center;
 }
 
-#about > .container > h3 {
-    margin-top: 50px;
+.about-text {
+    margin-bottom: 50px;
+}
+
+.sub-title {
+    margin-bottom: 25px;
 }
 
 
@@ -232,14 +227,20 @@ nav a:hover {
 
 .skill-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 25px;
+
     margin-top: 30px;
 }
 
 .skill-card {
     padding: 30px;
-    background: #fff;
+
+    background: #f5f7fa;
+
     border-radius: 15px;
 
     box-shadow:
@@ -265,99 +266,6 @@ nav a:hover {
 
 
 /* =========================
-   Profile
-========================= */
-
-.profile-section {
-    background: #fff;
-}
-
-.profile-box {
-    max-width: 700px;
-    margin: 40px auto 0;
-    padding: 35px;
-
-    background: #f5f7fa;
-
-    border-radius: 15px;
-    border-left: 5px solid #667eea;
-}
-
-.profile-box ul {
-    padding-left: 25px;
-}
-
-
-/* =========================
-   Features
-========================= */
-
-.features-section {
-    background: #f5f7fa;
-}
-
-.features-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.feature-card {
-    background: #fff;
-    padding: 35px;
-    border-radius: 15px;
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.06);
-
-    transition:
-        transform 0.3s;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-}
-
-.feature-card h3 {
-    font-size: 1.25rem;
-}
-
-
-/* =========================
-   Flow
-========================= */
-
-.flow-section {
-    background: #fff;
-}
-
-.flow-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-}
-
-.flow-card {
-    padding: 25px 20px;
-
-    background: #f5f7fa;
-
-    border-radius: 15px;
-
-    text-align: center;
-}
-
-.flow-card h3 {
-    font-size: 1.05rem;
-    color: #667eea;
-}
-
-.flow-card p {
-    font-size: 0.9rem;
-}
-
-
-/* =========================
    Works
 ========================= */
 
@@ -367,7 +275,10 @@ nav a:hover {
 
 .works-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 30px;
 }
 
@@ -378,7 +289,9 @@ nav a:hover {
 
 .work-card {
     background: #fff;
+
     border-radius: 18px;
+
     overflow: hidden;
 
     box-shadow:
@@ -404,13 +317,16 @@ nav a:hover {
 .work-image {
     width: 100%;
     height: 220px;
+
     overflow: hidden;
+
     background: #ddd;
 }
 
 .work-image img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     object-position: center;
 }
@@ -439,11 +355,13 @@ nav a:hover {
 
 .work-content h3 {
     font-size: 1.4rem;
+
     margin-bottom: 15px;
 }
 
 .work-content p {
     font-size: 0.95rem;
+
     margin-bottom: 25px;
 }
 
@@ -482,11 +400,13 @@ nav a:hover {
 
 .contact-section {
     background: #fff;
+
     text-align: center;
 }
 
 .contact-form {
     max-width: 700px;
+
     margin: 50px auto 0;
 
     text-align: left;
@@ -509,11 +429,13 @@ nav a:hover {
     margin-bottom: 25px;
 
     border: 1px solid #ddd;
+
     border-radius: 8px;
 
     background: #f9fafc;
 
     font-family: inherit;
+
     font-size: 1rem;
 
     outline: none;
@@ -537,8 +459,11 @@ nav a:hover {
 
 .contact-form .btn {
     border: none;
+
     cursor: pointer;
+
     font-family: inherit;
+
     font-size: 1rem;
 }
 
@@ -551,6 +476,7 @@ footer {
     padding: 40px 0;
 
     background: #222;
+
     color: #fff;
 
     text-align: center;
@@ -579,17 +505,14 @@ footer a:hover {
         font-size: 2.4rem;
     }
 
-    .skill-list,
-    .features-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .flow-container {
-        grid-template-columns: repeat(2, 1fr);
+    .skill-list {
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
     .works-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
 }
@@ -635,6 +558,7 @@ footer a:hover {
 
     nav ul {
         display: block;
+
         padding: 15px 0;
     }
 
@@ -644,6 +568,7 @@ footer a:hover {
 
     nav a {
         display: block;
+
         padding: 12px;
     }
 
@@ -671,30 +596,19 @@ footer a:hover {
 
     .section h2 {
         font-size: 1.8rem;
+
         margin-bottom: 35px;
-    }
-
-    .intro {
-        padding: 70px 0;
-    }
-
-    .intro h2 {
-        font-size: 1.7rem;
     }
 
 
     /* Cards */
 
     .skill-list,
-    .features-container,
-    .flow-container,
     .works-container {
         grid-template-columns: 1fr;
     }
 
-
-    .skill-card,
-    .feature-card {
+    .skill-card {
         padding: 25px;
     }
 
@@ -710,13 +624,6 @@ footer a:hover {
     }
 
 
-    /* Profile */
-
-    .profile-box {
-        padding: 25px;
-    }
-
-
     /* Contact */
 
     .contact-form {
@@ -725,109 +632,41 @@ footer a:hover {
 
 }
 ```
-/* Priceページ お問い合わせ */
-
-.price-contact {
-    text-align: center;
-    background: #fff;
-    padding: 80px 20px;
-    margin: 40px auto;
-    border-radius: 15px;
-    max-width: 900px;
-}
-
-.price-contact h2 {
-    margin-bottom: 20px;
-}
-
-.price-contact p {
-    margin-bottom: 25px;
-    color: #555;
-}
-
-.price-contact .btn {
-    display: inline-block;
-}
-.price-card ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.price-card li {
-    margin-bottom: 10px;
-}
-.price-card {
-    text-align: center;
-}
-.price-contact {
-    text-align: center;
-}
-
-.price-contact p {
-    text-align: center;
-}
-
-.price-contact .btn {
-    display: inline-block;
-}
-/* =========================
-   Service 制作の流れ
-========================= */
-
-.flow-section {
-    margin-top: 80px;
-    padding: 70px 0;
-    background: #fff;
-}
-
-.flow-section h2 {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.flow-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-}
-
-.flow-card {
-    background: #f5f7fa;
-    padding: 30px 20px;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.flow-card h3 {
-    color: #667eea;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.flow-card h4 {
+```css
+.hero-label {
     margin-bottom: 15px;
+
+    font-size: 0.85rem;
+
+    letter-spacing: 0.2em;
+
+    font-weight: 600;
+
+    opacity: 0.9;
 }
+```
+```css
+.hero .btn {
+    padding: 15px 34px;
 
-.flow-card p {
-    font-size: 0.9rem;
+    border-radius: 4px;
+
+    letter-spacing: 0.05em;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
-
-/* スマホ */
-
-@media (max-width: 900px) {
-
-    .flow-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+```
+```css id="v4q8zn"
+.hero-content {
+    padding: 30px 20px;
 }
-
-@media (max-width: 700px) {
-
-    .flow-container {
-        grid-template-columns: 1fr;
-    }
-
+```
+```css
+.hero h2 {
+    font-size: 3.6rem;
+    line-height: 1.35;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
 }
+```
