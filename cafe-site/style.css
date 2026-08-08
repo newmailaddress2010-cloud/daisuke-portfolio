@@ -1,35 +1,152 @@
+```css
+/* =========================
+   Reset
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* =========================
+   Base
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     line-height: 1.8;
     color: #333;
-    background-color: #f7f7f7;
+    background: #f7f5ef;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   Header
+========================= */
+
 header {
-    background: #222;
+    background: #26352a;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 45px 20px;
 }
 
 header h1 {
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
 }
 
 header p {
     font-size: 16px;
+    opacity: 0.9;
 }
+
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    margin: 5px 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+ .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.42);
+}
+
+ .hero-text {
+    position: absolute;
+    z-index: 2;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 700px;
+
+    text-align: center;
+
+    color: #fff;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    padding: 30px 35px;
+
+    border-radius: 12px;
+
+    text-shadow: none;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+}
+
+
+/* =========================
+   Sections
+========================= */
 
 section:not(.hero) {
     max-width: 1000px;
-    margin: 60px auto;
+    margin: 80px auto;
     padding: 0 20px;
 }
 
@@ -37,17 +154,22 @@ h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 28px;
+    color: #26352a;
 }
 
 
-/* 制作実績 */
+/* =========================
+   Card
+========================= */
 
 .card {
     background: white;
     border-radius: 15px;
     padding: 25px;
     margin-bottom: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .card img {
@@ -65,95 +187,45 @@ h2 {
 }
 
 
-/* ボタン */
+/* =========================
+   Menu
+========================= */
 
-a {
-    display: inline-block;
-    background: #333;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 30px;
-    margin-top: 15px;
-}
-
-a:hover {
-    opacity: 0.7;
-}
-
-
-/* お問い合わせ */
-
-.contact {
-    text-align: center;
-}
-
-
-/* スマホ対応 */
-
-@media(max-width:600px){
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-}
-.hero {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.hero img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    display: block;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.hero-text h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero-text p {
-    font-size: 1.3rem;
-}
 .menu-grid {
-    display: flex;
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
 }
+
 
 .menu-card {
-    width: 300px;
     background: white;
+
     border-radius: 15px;
+
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transition: 0.3s;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+
     text-align: center;
 }
+
 
 .menu-card:hover {
     transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
 }
+
 
 .menu-card img {
     width: 100%;
@@ -161,23 +233,35 @@ a:hover {
     object-fit: cover;
 }
 
+
 .menu-card h3 {
     margin: 20px 0 10px;
+    font-size: 20px;
+    color: #333;
 }
+
 
 .menu-card p {
     padding: 0 20px;
     color: #666;
 }
 
+
 .menu-card span {
     display: inline-block;
+
     margin: 20px 0;
+
     font-size: 22px;
     font-weight: bold;
+
     color: #8b5a2b;
 }
 
+
+/* =========================
+   Contact
+========================= */
 
 #contact {
     text-align: center;
@@ -187,61 +271,78 @@ a:hover {
 
 .contact-button {
     display: inline-block;
+
     margin-top: 20px;
+
     padding: 15px 40px;
+
     background: #6b8e5a;
+
     color: white;
-    text-decoration: none;
+
     border-radius: 30px;
+
+    transition: 0.3s;
 }
 
 
 .contact-button:hover {
     opacity: 0.8;
 }
+
+
+/* =========================
+   Access
+========================= */
+
 .access-box {
     background: white;
+
     max-width: 500px;
+
     margin: 0 auto;
+
     padding: 40px;
+
     border-radius: 15px;
+
     text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
 
 .access-box p {
     margin-bottom: 20px;
 }
-@media (max-width: 600px) {
-
-    .hero img {
-        height: 400px;
-    }
-
-    .hero-text h2 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
 
 
-    .menu-grid {
-        flex-direction: column;
-        align-items: center;
-    }
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background: #26352a;
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    margin-top: 80px;
+}
 
 
-    .menu-card {
-        width: 90%;
-    }
+/* =========================
+   Smartphone
+========================= */
 
+@media (max-width: 700px) {
 
     header {
         padding: 30px 15px;
     }
-
 
     header h1 {
         font-size: 28px;
@@ -249,8 +350,56 @@ a:hover {
 
 
     nav a {
-        margin: 5px;
-        padding: 10px 15px;
+        margin: 4px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+
+    .hero img {
+        height: 420px;
+    }
+
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+
+    section:not(.hero) {
+        margin: 60px auto;
+    }
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    .menu-card {
+        width: 100%;
+    }
+
+
+    .menu-card img {
+        height: 230px;
+    }
+
+
+    .access-box {
+        padding: 30px 20px;
     }
 
 }
+```

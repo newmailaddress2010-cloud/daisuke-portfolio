@@ -1,588 +1,833 @@
-/* ==========================
-   リセット
-========================== */
+```css
+/* =========================
+   Reset
+========================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:"Noto Sans JP",sans-serif;
-    background:#f5f7fa;
-    color:#333;
-    line-height:1.8;
+
+/* =========================
+   Base
+========================= */
+
+html {
+    scroll-behavior: smooth;
 }
 
-/* ==========================
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+    background: #f5f7fa;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   Container
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================
    Header
-========================== */
+========================= */
 
-header{
-    background:linear-gradient(135deg,#2563eb,#0f766e);
-    color:#fff;
-    text-align:center;
-    padding:80px 20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 5%;
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header h1{
-    font-size:48px;
-    margin-bottom:20px;
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
-header p{
-    font-size:20px;
-    margin:25px 0;
-}
 
-/* ==========================
+/* =========================
    Navigation
-========================== */
+========================= */
 
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:30px;
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
-nav a{
-    color:#fff;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
+nav a {
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-nav a:hover{
-    opacity:.7;
+nav a:hover {
+    opacity: 0.7;
 }
 
-/* ==========================
-   Button
-========================== */
 
-.btn{
-    display:inline-block;
-    padding:15px 35px;
-    background:#fff;
-    color:#2563eb;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:bold;
-    transition:.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
+/* =========================
+   Menu Button
+========================= */
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.btn:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
 
-/* ==========================
+/* =========================
    Hero
-========================== */
+========================= */
 
-.hero{
-    background:#fff;
-    text-align:center;
-    padding:100px 20px;
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(30, 30, 60, 0.55),
+            rgba(30, 30, 60, 0.55)
+        ),
+        url("images/hero.jpg") center / cover no-repeat;
+
+    color: #fff;
 }
 
-.hero h2{
-    font-size:48px;
-    color:#1e3a8a;
-    margin-bottom:20px;
+.hero-content {
+    width: 90%;
+    max-width: 800px;
 }
 
-.hero p{
-    font-size:20px;
-    margin-bottom:40px;
+.hero h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
 }
 
-/* ==========================
+.hero p {
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   Button
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 13px 30px;
+    border-radius: 30px;
+
+    background: #667eea;
+    color: #fff;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.3s,
+        opacity 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+
+/* =========================
+   Introduction
+========================= */
+
+.intro {
+    padding: 100px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Common Section
+========================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.section h3 {
+    margin-bottom: 15px;
+}
+
+.section-description {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+
+
+/* =========================
    About
-========================== */
+========================= */
 
-.about{
-    max-width:900px;
-    margin:auto;
-    padding:80px 20px;
-    text-align:center;
+#about {
+    background: #f5f7fa;
 }
 
-.about h2{
-    font-size:36px;
-    margin-bottom:30px;
+#about > .container > h3 {
+    margin-top: 50px;
 }
 
-.about h3{
-    margin-top:50px;
-    margin-bottom:25px;
-}
 
-.about p{
-    color:#555;
-    margin-bottom:15px;
-}
-
-/* ==========================
+/* =========================
    Skills
-========================== */
+========================= */
 
-.skill-list{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.skill-card{
-    width:220px;
-    background:#fff;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-    font-weight:bold;
+.skill-card {
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    text-align: center;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
 }
 
-.skill-card p{
-    margin-top:10px;
-    font-size:14px;
-    color:#555;
-    font-weight:normal;
-}
-/* ==========================
-   Works
-========================== */
+.skill-card:hover {
+    transform: translateY(-5px);
 
-#works{
-    padding:80px 20px;
-    text-align:center;
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-#works h2{
-    font-size:36px;
-    margin-bottom:40px;
-}
-
-.works-container{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.card{
-    width:320px;
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-    transition:.3s;
-    text-align:center;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    transition:.3s;
-}
-
-.card:hover img{
-    transform:scale(1.05);
-}
-
-.card h3{
-    margin:20px 0 10px;
-}
-
-.card p{
-    padding:0 20px;
-    margin-bottom:10px;
-    color:#555;
-}
-
-.button{
-    display:inline-block;
-    margin:15px 0 25px;
-    padding:10px 20px;
-    background:#0077cc;
-    color:#fff;
-    text-decoration:none;
-    border-radius:5px;
-    transition:.3s;
-}
-
-.button:hover{
-    background:#005fa3;
-}
-
-/* ==========================
-   Contact
-========================== */
-
-.contact{
-    background:#fff;
-    text-align:center;
-    padding:80px 20px;
-}
-
-.contact h2{
-    font-size:36px;
-    margin-bottom:20px;
-}
-
-.contact p{
-    margin-bottom:30px;
-}
-
-/* ==========================
-   Footer
-========================== */
-
-footer{
-    background:#1f2937;
-    color:#fff;
-    text-align:center;
-    padding:25px;
-}
-
-/* ==========================
-   Responsive
-========================== */
-
-@media (max-width:768px){
-
-    header h1{
-        font-size:34px;
-    }
-
-    nav ul{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .hero{
-        padding:70px 20px;
-    }
-
-    .hero h2{
-        font-size:32px;
-    }
-
-    .hero p{
-        font-size:18px;
-    }
-
-    .card{
-        width:90%;
-        max-width:350px;
-    }
-
-    .skill-card{
-        width:90%;
-        max-width:320px;
-    }
-}/* ==========================
-   ハンバーガーメニュー
-========================== */
-
-.menu-toggle{
-    display:none;
+.skill-card h3 {
+    margin-bottom: 10px;
 }
 
 
-/* スマホ表示 */
-@media (max-width:768px){
-
-    .menu-toggle{
-        display:block;
-        margin-bottom:20px;
-    }
-
-    nav{
-        display:none;
-    }
-
-    nav.active{
-        display:block;
-    }
-
-}.menu-toggle{
-    user-select:none;
-}/* ==========================
-   スクロール表示
-========================== */
-
-.fade{
-    opacity:0;
-    transform:translateY(40px);
-    transition:1s;
-}
-
-.fade.active{
-    opacity:1;
-    transform:translateY(0);
-}/* ==========================
-   Contact Form
-========================== */
-
-.contact form{
-    max-width:600px;
-    margin:40px auto 0;
-    text-align:left;
-}
-
-.contact label{
-    display:block;
-    margin-bottom:8px;
-    font-weight:bold;
-}
-
-
-.contact input,
-.contact textarea{
-
-    width:100%;
-
-    padding:15px;
-
-    margin-bottom:20px;
-
-    border:1px solid #ddd;
-
-    border-radius:8px;
-
-    font-size:16px;
-
-}
-
-
-.contact textarea{
-
-    height:150px;
-
-    resize:vertical;
-
-}
-
-
-.contact button{
-
-    display:block;
-
-    width:100%;
-
-    padding:15px;
-
-    background:#2563eb;
-
-    color:white;
-
-    border:none;
-
-    border-radius:30px;
-
-    font-size:16px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-
-.contact button:hover{
-
-    background:#1d4ed8;
-
-    transform:translateY(-3px);
-
-}.menu-toggle{
-    font-size:20px;
-    cursor:pointer;
-    font-weight:bold;
-}/* ==========================
-   制作の流れ
-========================== */
-
-.flow{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.flow h2{
-    font-size:36px;
-    margin-bottom:40px;
-}
-
-.flow-container{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.flow-card{
-    width:220px;
-    background:#fff;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-}
-
-.flow-card h3{
-    margin-bottom:15px;
-    color:#2563eb;
-}
-
-.flow-card p{
-    color:#555;
-    font-size:14px;
-}/* ==========================
-   Price
-========================== */
-
-.price{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.price h2{
-    font-size:36px;
-    margin-bottom:20px;
-}
-
-.price-container{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-    margin-top:50px;
-}
-
-.price-card{
-    width:300px;
-    background:#fff;
-    padding:35px 25px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-}
-
-.price-card h3{
-    font-size:24px;
-    color:#2563eb;
-    margin-bottom:20px;
-}
-
-.price-number{
-    font-size:28px;
-    font-weight:bold;
-    margin-bottom:25px;
-}
-
-.price-card ul{
-    list-style:none;
-}
-
-.price-card li{
-    margin-bottom:10px;
-    color:#555;
-}
-/* ==========================
+/* =========================
    Profile
-========================== */
+========================= */
 
-.profile{
-    padding:80px 20px;
-    text-align:center;
-    max-width:900px;
-    margin:auto;
+.profile-section {
+    background: #fff;
 }
 
-.profile h2{
-    font-size:36px;
-    margin-bottom:30px;
+.profile-box {
+    max-width: 700px;
+    margin: 40px auto 0;
+    padding: 35px;
+
+    background: #f5f7fa;
+
+    border-radius: 15px;
+    border-left: 5px solid #667eea;
 }
 
-.profile p{
-    color:#555;
-    margin-bottom:20px;
-}
-
-
-.profile-box{
-    background:#fff;
-    padding:30px;
-    margin-top:40px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
+.profile-box ul {
+    padding-left: 25px;
 }
 
 
-.profile-box h3{
-    margin-bottom:20px;
-    color:#2563eb;
+/* =========================
+   Features
+========================= */
+
+.features-section {
+    background: #f5f7fa;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
 }
 
 
-.profile-box ul{
-    list-style:none;
+/* =========================
+   Flow
+========================= */
+
+.flow-section {
+    background: #fff;
+}
+
+.flow-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.flow-card {
+    padding: 25px 20px;
+
+    background: #f5f7fa;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.flow-card h3 {
+    font-size: 1.05rem;
+    color: #667eea;
+}
+
+.flow-card p {
+    font-size: 0.9rem;
 }
 
 
-.profile-box li{
-    margin-bottom:10px;
-}
-/* ==========================
-   選ばれる理由
-========================== */
+/* =========================
+   Works
+========================= */
 
-.features{
-    padding:80px 20px;
-    text-align:center;
+.works-section {
+    background: #f5f7fa;
 }
 
-.features h2{
-    font-size:36px;
-    margin-bottom:40px;
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.features-container{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+
+/* =========================
+   Work Card
+========================= */
+
+.work-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
 }
 
-.feature-card{
-    width:280px;
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-    transition:.3s;
+.work-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
-.feature-card:hover{
-    transform:translateY(-8px);
+
+/* =========================
+   Work Image
+========================= */
+
+.work-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #ddd;
 }
 
-.feature-card h3{
-    margin-bottom:15px;
-    color:#2563eb;
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.feature-card p{
-    color:#555;
+
+/* =========================
+   Work Content
+========================= */
+
+.work-content {
+    padding: 28px;
+}
+
+.work-category {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #667eea;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 0.05em;
+}
+
+.work-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.work-content p {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Work Button
+========================= */
+
+.work-button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+
+    background: #667eea;
+    color: #fff;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    transition:
+        transform 0.3s,
+        opacity 0.3s;
+}
+
+.work-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact-section {
+    background: #fff;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 50px auto 0;
+
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    background: #f9fafc;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #667eea;
+
+    box-shadow:
+        0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    padding: 40px 0;
+
+    background: #222;
+    color: #fff;
+
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero h2 {
+        font-size: 2.4rem;
+    }
+
+    .skill-list,
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flow-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .works-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   Smartphone
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+
+    /* Menu */
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: #667eea;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+        padding: 15px 0;
+    }
+
+    nav li {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+    }
+
+    .intro {
+        padding: 70px 0;
+    }
+
+    .intro h2 {
+        font-size: 1.7rem;
+    }
+
+
+    /* Cards */
+
+    .skill-list,
+    .features-container,
+    .flow-container,
+    .works-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .skill-card,
+    .feature-card {
+        padding: 25px;
+    }
+
+
+    /* Works */
+
+    .work-image {
+        height: 230px;
+    }
+
+    .work-content {
+        padding: 25px;
+    }
+
+
+    /* Profile */
+
+    .profile-box {
+        padding: 25px;
+    }
+
+
+    /* Contact */
+
+    .contact-form {
+        margin-top: 35px;
+    }
+
+}
+```
+/* Priceページ お問い合わせ */
+
+.price-contact {
+    text-align: center;
+    background: #fff;
+    padding: 80px 20px;
+    margin: 40px auto;
+    border-radius: 15px;
+    max-width: 900px;
+}
+
+.price-contact h2 {
+    margin-bottom: 20px;
+}
+
+.price-contact p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.price-contact .btn {
+    display: inline-block;
+}
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.price-card li {
+    margin-bottom: 10px;
+}
+.price-card {
+    text-align: center;
+}
+.price-contact {
+    text-align: center;
+}
+
+.price-contact p {
+    text-align: center;
+}
+
+.price-contact .btn {
+    display: inline-block;
+}
+/* =========================
+   Service 制作の流れ
+========================= */
+
+.flow-section {
+    margin-top: 80px;
+    padding: 70px 0;
+    background: #fff;
+}
+
+.flow-section h2 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.flow-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.flow-card {
+    background: #f5f7fa;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.flow-card h3 {
+    color: #667eea;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.flow-card h4 {
+    margin-bottom: 15px;
+}
+
+.flow-card p {
+    font-size: 0.9rem;
+}
+
+
+/* スマホ */
+
+@media (max-width: 900px) {
+
+    .flow-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .flow-container {
+        grid-template-columns: 1fr;
+    }
+
 }
